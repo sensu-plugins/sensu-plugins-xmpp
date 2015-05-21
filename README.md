@@ -5,11 +5,12 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-xmpp/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-xmpp)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-xmpp/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-xmpp)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-xmpp.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-xmpp)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-xmpp](https://codeship.com/projects/79427170-e204-0132-c525-3642858bbef8/status?branch=master)](https://codeship.com/projects/81357)
 
 ## Functionality
 
 ## Files
- * bin/handler-xmpp
+ * bin/handler-xmpp.rb
 
 ## Usage
 ```
