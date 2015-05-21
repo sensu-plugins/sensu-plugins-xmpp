@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 #
 
-require 'rubygems' if RUBY_VERSION < '1.9.0'
 require 'sensu-handler'
 require 'xmpp4r/client'
 require 'xmpp4r/muc'
