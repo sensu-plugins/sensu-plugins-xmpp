@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-xmpp.gemspec
+- gem install sensu-plugins-xmpp-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: ArJ4N6D/Px5TOa+WZSszNZxvIlZuCh4zBQZz8COiYBpPPKhMZfxU2fVdFr5xzUeBMkcFeXsixGaOU9aRMJiUt88sSEe5veR4pT3ITheQvGWmD8ZMrGUDSzwxcoEn8lb1jgmSB9+K1oxY7jy3X9BQMdTD65PAaD9dASUyC2wpVzk=
+  gem: sensu-plugins-xmpp
+  on:
+    ags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-xmpp
