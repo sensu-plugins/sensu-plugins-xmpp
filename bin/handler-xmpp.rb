@@ -25,8 +25,8 @@ class XmppHandler < Sensu::Handler
            else
              #      body = "Sensu ALERT - [#{event_name}] - #{@event['check']['notification']}"
              "Sensu ALERT - [#{event_name}] - #{@event['check']['output']} - #{@event['check']['notification']}"
-      #      body = "Sensu ALERT - [#{event_name}] - #{@event['check']['output']}"
-    end
+             #      body = "Sensu ALERT - [#{event_name}] - #{@event['check']['output']}"
+           end
 
     jid = JID.new(xmpp_jid)
     cl = Client.new(jid)
