@@ -1,15 +1,19 @@
-#Change Log
+# Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
-## Unreleased
+## [Unreleased]
 ### Fixed
 - check-xmpp-login.rb do not rescue from SystemExit (@ushis)
 
-## [1.0.0] - 2017-05-17
+## [1.0.0] - 2017-05-16
 ### Added
 - check-xmpp-login.rb (@ushis)
+- Support for Ruby 2.3 and 2.4 (@eheydrick)
+
+### Removed
+- Support for Ruby 1.9.3
 
 ## [0.0.3] - 2015-07-14
 ### Changed
