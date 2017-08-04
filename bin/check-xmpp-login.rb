@@ -62,7 +62,7 @@ class CheckXmppLogin < Sensu::Plugin::Check::CLI
     ok "Logged in as #{config[:jid]}"
   rescue Jabber::ClientAuthenticationFailure
     warning 'Login failed: Invalid jid or password'
-  rescue Exception => err # rubocop:disable RescueException
+  rescue StandardError => err
     critical "Failed to connect to XMPP server: #{err.message}"
   end
 end
