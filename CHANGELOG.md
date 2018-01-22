@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
+## [1.1.0] 2018-01-21
+### Changed
+- Bumped Rubocop to v0.52.1 in response to CVE-2017-8418 (@nicoleheejin)
+
 ## [1.0.1] - 2017-08-04
 ### Fixed
 - check-xmpp-login.rb do not rescue from SystemExit (@ushis)

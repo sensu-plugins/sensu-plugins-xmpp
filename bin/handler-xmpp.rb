@@ -4,9 +4,10 @@
 require 'sensu-handler'
 require 'xmpp4r/client'
 require 'xmpp4r/muc'
-include Jabber
 
 class XmppHandler < Sensu::Handler
+  include Jabber
+
   def event_name
     @event['client']['name'] + '/' + @event['check']['name']
   end
