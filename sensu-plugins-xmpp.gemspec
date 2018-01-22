@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'date'
 require_relative 'lib/sensu-plugins-xmpp'
 
-Gem::Specification.new do |s| #rubocop:disable Metrics/BlockLength
+Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.authors                = ['Sensu-Plugins and contributors']
   s.date                   = Date.today.to_s
   s.description            = 'Sensu plugins for working with xmpp'
