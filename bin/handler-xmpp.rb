@@ -4,6 +4,8 @@
 require 'sensu-handler'
 require 'xmpp4r/client'
 require 'xmpp4r/muc'
+
+# TODO: investigate if a require is correct and if not how to fix this.
 include Jabber
 
 class XmppHandler < Sensu::Handler
