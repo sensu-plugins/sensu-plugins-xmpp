@@ -5,12 +5,13 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+## [3.0.0] - 2018-12-17
 ### Breaking Changes
 - bumped `sensu-plugin` runtime dependendency from `~> 1.2` to `~> 3.0` you can read about it [here](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#v200---2017-03-29) and [here](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#300---2018-12-04) (@dependabot) (@majormoses)
 - removed support for ruby versions `< 2.3` as they are EOL (@majormoses)
 
 ### Security
-- Updated Yard to `~> 0.9.11`, which fixes [CVE-2017-17042](https://nvd.nist.gov/vuln/detail/CVE-2017-17042)
+- Updated Yard to `~> 0.9.11`, which fixes [CVE-2017-17042](https://nvd.nist.gov/vuln/detail/CVE-2017-17042) (@majormoses)
 
 ## [2.0.0] - 2018-02-27
 ### Security
@@ -49,7 +50,8 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-xmpp/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-xmpp/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/sensu-plugins/sensu-plugins-xmpp/compare/2.0.0...3.0.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-xmpp/compare/1.0.1...2.0.0
 [1.0.1]: https://github.com/sensu-plugins/sensu-plugins-xmpp/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-xmpp/compare/0.0.3...1.0.0
