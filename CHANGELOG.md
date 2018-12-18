@@ -5,6 +5,13 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+### Breaking Changes
+- bumped `sensu-plugin` runtime dependendency from `~> 1.2` to `~> 3.0` you can read about it [here](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#v200---2017-03-29) and [here](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#300---2018-12-04) (@dependabot) (@majormoses)
+- removed support for ruby versions `< 2.3` as they are EOL (@majormoses)
+
+### Security
+- Updated Yard to `~> 0.9.11`, which fixes [CVE-2017-17042](https://nvd.nist.gov/vuln/detail/CVE-2017-17042)
+
 ## [2.0.0] - 2018-02-27
 ### Security
 - updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418 (@majormoses)
